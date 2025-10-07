@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  padding: 10px 40px;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.header-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  gap: 40px;
+  min-width: 600px;
+}
+
+.dropbtn:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: flex;
+}
+
+.dropdown-column {
+  min-width: 140px;
+}
+
+.dropdown-column h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.dropdown-column a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.dropdown-column a:hover {
+  color: #b30000;
+}
+
+.badge {
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 1px 4px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+.page-title {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+/* =============== PRODUCT DETAIL PAGE =============== */
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 90%;
+  margin: 40px auto;
+  align-items: flex-start;
+}
+
+.product-detail-img {
+  flex: 1 1 45%;
+}
+.product-detail-img img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-detail-info {
+  flex: 1 1 45%;
+}
+.product-detail-info h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.price {
+  color: #b30000;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.detail-meta {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+.detail-meta li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.detail-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-rent {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.btn-rent:hover {
+  background-color: #b30000;
+}
+
+/* Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+.product-card,
+.product-card h2,
+.product-card p,
+.product-card a {
+  color: #000;
+}
+.product-card a {
+  text-decoration: none;
+}
+.product-card a:hover {
+  color: #b30000;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.price {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Pagination */
+.pagination {
+  margin: 20px 0;
+}
+.pagination a {
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  margin: 0 4px;
+  text-decoration: none;
+}
+.pagination span {
+  margin: 0 6px;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+.footer .newsletter {
+  margin-bottom: 10px;
+}
+.footer input[type="email"] {
+  padding: 8px;
+  width: 220px;
+  border: none;
+}
+.footer button {
+  padding: 8px 12px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
