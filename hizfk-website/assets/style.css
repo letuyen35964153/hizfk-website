@@ -69,6 +69,98 @@ body {
   display: flex;
 }
 
+/* =============== USER DROPDOWN (LOGIN / INFO) =============== */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.user-panel {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  color: #000;
+  width: 260px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.user-dropdown:hover .user-panel {
+  display: block;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.login-form button:hover {
+  background: #b30000;
+}
+
+.new-user {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.new-user a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.user-info {
+  text-align: left;
+}
+.user-info h4 {
+  margin: 0 0 6px 0;
+}
+.logout-btn {
+  display: inline-block;
+  background: #b30000;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background 0.3s ease;
+}
+.logout-btn:hover {
+  background: #d00000;
+}
+
 .dropdown-column {
   min-width: 140px;
 }
@@ -116,7 +208,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* =============== PRODUCT DETAIL PAGE =============== */
 .product-detail-container {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +271,6 @@ body {
   background-color: #b30000;
 }
 
-/* Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
